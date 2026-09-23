@@ -47,3 +47,39 @@ figcaption {
     color: #555555;
     margin-top: 8px;
 }
+ .card {
+    background-color:#8d24aa;
+    padding:15px;
+    margin: 15px 0;
+    border-left:6px  solid #6d2d5cborder-radius: 10px;
+ }
+
+ .card h3 {
+    margin-top: 0;
+ }
+footer {
+    background-color: #222222;
+    color:white;
+    text-align: center;
+    padding:20px;
+    margin-top: 30px
+}
+button{
+    background-color:rgb(5, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color :#8d24aa;
+}
+
+.curtir {
+    display: block;
+    width: fit-content;
+    margin:20px auto;
+}
+
