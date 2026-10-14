@@ -1,27 +1,26 @@
-
 :root{
     --cor-fundo: #f4f1ea;
-    --cor-texto:  #222222;
+    --cor-texto: #222222;
     --cor-principal: #6b2d5c;
     --cor-secundaria: #9b4d83;
     --cor-hover: #c77dff;
-    --cor-superficie:  white;
-    --cor-card: #f3d9fa;
+    --cor-superficie: white;
+    --cor-card:  #f3d9fa;
     --cor-legenda: #555555;
     --cor-clara: white;
     --cor-rodape: #222222;
  }
  
 body{
-    background-color: rgb(138, 185, 150);
-    color: #000000;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header { 
-    background-color: rgb(138, 185, 150);
-    color: rgb(5, 0, 0);
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     text-align: center;
     padding: 30px;
 }
@@ -30,12 +29,32 @@ h1 {
     font-size: 36px;
 }
 h2{
-    color: #c5b3c1c9;
+    color: var(--cor-principal);
 }
+
 p {
     font-size: 18px;
     line-height: 1.6;
 }
+
+ nav {
+    margin-top: 20px;
+ }
+
+ nav a {
+    color: var(--cor-clara);
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+ }
+
+ nav a:hover {
+    background-color: var(--cor-hover);
+ }
+
 main {
     width: 80%;
     margin: auto;
@@ -59,14 +78,15 @@ img {
 figcaption {
     text-align: center;
     font-size: 14px;
-    color: #555555;
+    color: var(--cor-legenda);
     margin-top: 8px;
 }
- .card {
-    background-color:#8d24aa;
+
+.card {
+    background-color: var(--cor-card);
     padding:15px;
     margin: 15px 0;
-    border-left:6px  solid #6d2d5c;
+    border-left:6px  solid var(--cor-principal);
     border-radius: 10px;
  }
 
@@ -74,15 +94,16 @@ figcaption {
     margin-top: 0;
  }
 footer {
-    background-color: #222222;
-    color:white;
+    background-color: var(--cor-rodape);
+    color: var(--cor-clara);
     text-align: center;
     padding:20px;
-    margin-top: 30px
+    margin-top: 30px;
 }
-button{
-    background-color:rgb(5, 0, 0);
-    color: white;
+
+button {
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -90,7 +111,7 @@ button{
 }
 
 button:hover {
-    background-color :#8d24aa;
+    background-color: var(--cor-hover);
 }
 
 .curtir {
